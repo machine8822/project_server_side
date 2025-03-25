@@ -1,11 +1,9 @@
-import './App.css';
-import Tree from './components/Tree';
-import Header from './components/Header'
+import './css/Home.css';
+import Tree from '../components/Tree';
 
 function App() {
   return (
     <>
-      <Header />
       <section className="columns">
           <Tree 
           name="Live Oak"

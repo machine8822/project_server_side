@@ -3,10 +3,10 @@ import "./css/Footer.css";
 function Footer() {
     return(
         <footer>
-            <h1>Foot of the Site</h1>
+            <h2>Foot of the Site</h2>
         </footer>
     );
     
 };
 
-export default Header;
+export default Footer;
