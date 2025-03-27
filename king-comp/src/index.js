@@ -5,6 +5,7 @@ import './index.css';
 import Layout from './Layout';
 import Nopage from './pages/Nopage';
 import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
   return(
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
+          <Route path="about" element={<About />} />
 
         </Route>
       </Routes>
