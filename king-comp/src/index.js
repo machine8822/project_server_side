@@ -1,20 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import {BrowserRouter, Route} from "react-router-dom"
+import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './index.css';
-import Layout from './Layout'
+import Layout from './Layout';
 import Nopage from './pages/Nopage';
+import Home from './pages/Home';
 
 function App() {
   return(
-    <BrouwerRouter>
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
 
         </Route>
       </Routes>
-    </BrouwerRouter>
+    </BrowserRouter>
   );
 }
 
