@@ -3,7 +3,7 @@ import "./css/Header.css";
 function Header() {
     return(
         <header>
-            <h1>Title of the Site</h1>
+            <h1>King Landscaping</h1>
         </header>
     );
     

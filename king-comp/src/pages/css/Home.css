@@ -1,0 +1,24 @@
+.flex-container h2 {
+    font-size: 50px;
+    top: 50px;
+}
+.flex-container img {
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media (min-width: 900px){
+    .flex-container {
+        display:flex;
+    }
+    .flex-container{
+        flex: 1;
+    }
+    
+}

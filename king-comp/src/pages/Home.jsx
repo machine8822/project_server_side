@@ -1,19 +1,14 @@
 import './css/Home.css';
-import Tree from '../components/Tree';
 
 function App() {
   return (
     <>
-      <section className="columns">
-          <Tree 
-          name="Live Oak"
-          description="Doesn't lose it's leaves"
-          image="./images/liveoak.jpg"/>
-          <Tree 
-          name="Dogwood"
-          description="Flowers in spring"
-          image="./images/dogwood.jpg"/>
-        </section>
+        <div className="flex-container">
+          <img src="../images/dogwood.jpg" />
+          <h2>King Landscaping</h2>
+          <img src="../images/dogwood.jpg" />
+        </div>
+        
     </>
   );
 }
