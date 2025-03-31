@@ -4,9 +4,9 @@ function App() {
   return (
     <>
         <div className="flex-container">
-          <img src="../images/dogwood.jpg" />
+          <img src="../images/logoFinal.jpg" />
           <h2>King Landscaping</h2>
-          <img src="../images/dogwood.jpg" />
+          <img src="../images/logoFinal.jpg" />
         </div>
         
     </>
