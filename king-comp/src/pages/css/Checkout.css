@@ -1,0 +1,53 @@
+.flex-container1 {
+    background-image: url("/public/images/lawn.png");
+    background-size: cover;
+    height: 100vh;
+}
+.flex-container1 h1 {
+    font-size: 50px;
+    text-align: center;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-container1 p {
+    background-color: antiquewhite;
+    width: 300px;
+    height: auto;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-container1 img {
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-container1 button {
+    background-color: yellowgreen;
+    width: 100px;
+    height: auto;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+@media (min-width: 900px){
+    .flex-container {
+        display:flex;
+    }
+    .flex-container{
+        flex: 1;
+    }
+    
+}

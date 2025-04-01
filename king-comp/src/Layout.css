@@ -10,7 +10,9 @@
     background-color: aqua;
     border-radius: 10px;
     margin: 10px;
+    text-decoration: none;
 }
+
 
 /* Activates when width > 900 */
 @media (min-width: 900px){
@@ -20,5 +22,6 @@
     .main-nav li {
         flex: 1;
     }
+    
     
 }

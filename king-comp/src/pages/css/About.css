@@ -1,0 +1,27 @@
+/* Structure */
+
+.content {
+    background-image: url("/public/images/lawn.png");
+    background-size: cover;
+    height: 100vh;
+}
+.flex-container2 h2 {
+    font-size: 50px;
+    top: 50px;
+}
+.flex-container2 img {
+    width: 400px;
+    height: 300px;
+    padding: 10px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.flex-container2 p {
+    background-color: antiquewhite;
+    margin: 5px;
+    font-size: 35px;
+    padding: 5px;
+}
+
+

@@ -1,3 +1,9 @@
+/* Structure */
+.flex-container {
+    background-image: url("/public/images/lawn.png");
+    background-size: cover;
+    height: 100vh;
+}
 .flex-container h2 {
     font-size: 50px;
     top: 50px;

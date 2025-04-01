@@ -1,24 +1,45 @@
 import './css/Equipment.css';
-import Tree from '../components/Tree';
+import Item from '../components/Item';
 
 function Equipment() {
     return(
-        <>
-            <h1>Equipment</h1>
-            <>
-      <section className="columns">
-          <Tree 
-          name="Live Oak"
-          description="Doesn't lose it's leaves"
-          image="./images/liveoak.jpg"/>
-          <Tree 
-          name="Dogwood"
-          description="Flowers in spring"
-          image="./images/dogwood.jpg"/>
-      </section>
         
-    </>
-        </>
+      <div className="columns">
+          <h1>Equipment</h1>
+          <Item
+          name="Mower"
+          description="Useful for cutting the grass when it gets too tall."
+          price="129.99"
+          rating="4.2"
+          image="./images/mower.png"/>
+          <Item
+          name="Rake"
+          description="Useful for moving leaves into a pile."
+          price="9.99"
+          rating="3.4"
+          image="./images/rake.png"/>
+          <Item
+          name="Edger"
+          description="Useful for trimming up the edge of the grass."
+          price="99.99"
+          rating="4.4"
+          image="./images/edger.png"/>
+          <Item
+          name="Leaf Blower"
+          description="Useful for blowing leaves wherever you need to."
+          price="38.99"
+          rating="3.3"
+          image="./images/leafblower.png"/>
+          <Item
+          name="Spreader"
+          description="Useful for spreading pesticide and other chemicals over a wide area."
+          price="49.99"
+          rating="2.7"
+          image="./images/spreader.png"/>
+      </div>
+        
+    
+        
     );
 }
 
