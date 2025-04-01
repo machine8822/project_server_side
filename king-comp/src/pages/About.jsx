@@ -1,10 +1,12 @@
 import './css/About.css';
 import image from "../images/CompanyStore.jpg";
+import HousePlans from '../components/HousePlans';
 
 function About() {
     return(
         <>
         <div className="content">
+            <HousePlans />
             <div className="flex-container2">
             <img src={image} alt="Not working."/>
             <p>We are a family owned business that was started in 1996. We offer many different equipment and plants to suite all your needs.</p>
