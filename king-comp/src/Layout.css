@@ -11,17 +11,26 @@
     border-radius: 10px;
     margin: 10px;
     text-decoration: none;
+    
+}
+.hide-small {
+    display: none;
 }
 
 
 /* Activates when width > 900 */
-@media (min-width: 900px){
+@media screen and (min-width: 900px){
     .main-nav ul{
         display:flex;
     }
     .main-nav li {
         flex: 1;
     }
-    
+    .main-nav button {
+        display: none;
+    }
+    .hide-small {
+        display: flex;
+    }
     
 }
