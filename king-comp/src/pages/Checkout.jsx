@@ -1,4 +1,5 @@
 import './css/Checkout.css';
+import image from "../images/logoFinal.png";
 
 function Checkout() {
     return(
@@ -6,10 +7,12 @@ function Checkout() {
             <h1>Checkout</h1>
             <p className="checkoutItems">Cart Items: </p>
             <p className="checkoutPrice">Total Price: $0</p>
-            <button onclick="emptyCart()">Checkout</button>
-            <img src="../images/logoFinal.png" alt="Not working." />
+            <button>Checkout</button>
+            <img src={image} alt="Not working." />
         </div>
     );
 }
+
+
 
 export default Checkout;

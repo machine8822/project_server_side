@@ -1,12 +1,13 @@
 import './css/Home.css';
+import image from "../images/logoFinal.png";
 
 function App() {
   return (
     <>
         <div className="flex-container">
-          <img src="./images/logoFinal.png" alt="Not working."/>
+          <img src={image} alt="Not working."/>
           <h2>King Landscaping</h2>
-          <img src="./images/logoFinal.png" alt="Not working." />
+          <img src={image} alt="Not workng." />
         </div>
         
     </>
