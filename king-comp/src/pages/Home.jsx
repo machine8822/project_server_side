@@ -5,7 +5,7 @@ import Slideshow from '../components/Slideshow';
 function App() {
   return (
     <>
-      <Slideshow />
+    {/*  <Slideshow /> */}
         <div className="flex-container">
           
           <img src={image} alt="Not working."/>
