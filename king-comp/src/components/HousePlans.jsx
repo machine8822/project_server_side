@@ -16,15 +16,15 @@ const HousePlans = () => {
     },[]);
 
     return (
-        <div id="house-plans" clasName="columns">
+        <div id="house-plans" className="columns">
             {houses.map((house)=>(
                 <HousePlan 
-                _id="1"
+                _id={house._id}
                 name={house.name}
-                size={house.size}
-                bedrooms={house.bedrooms}
-                bathrooms={house.bathrooms}
-                main_image={house.main_image}/>
+                desciption={house.desciption}
+                price={house.price}
+                rating={house.rating}
+                main_image={house.img1}/>
             ))}
             
         </div>
