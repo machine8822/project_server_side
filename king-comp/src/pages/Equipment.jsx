@@ -1,11 +1,13 @@
 import './css/Equipment.css';
 import Item from '../components/Item';
+import HousePlans from '../components/HousePlans';
 
 function Equipment() {
     return(
-        
       <div className="columns">
           <h1>Equipment</h1>
+          <HousePlans />
+          {/*
           <Item
           name="Mower"
           description="Useful for cutting the grass when it gets too tall."
@@ -36,6 +38,7 @@ function Equipment() {
           price="49.99"
           rating="2.7"
           image="./images/spreader.png"/>
+          */}
       </div>
         
     

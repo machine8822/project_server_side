@@ -9,7 +9,7 @@ const HousePlans = () => {
     useEffect(()=>{
         //automatically execute the async function
         (async () => {
-            const response = await axios.get("http://localhost:3001/api/houses");
+            const response = await axios.get("https://landscaping-backend.onrender.com/api/houses");
             setHouses(response.data);
         })();
 
@@ -21,7 +21,7 @@ const HousePlans = () => {
                 <HousePlan 
                 _id={house._id}
                 name={house.name}
-                desciption={house.desciption}
+                description={house.description}
                 price={house.price}
                 rating={house.rating}
                 main_image={house.img1}/>
