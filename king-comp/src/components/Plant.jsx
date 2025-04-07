@@ -1,9 +1,9 @@
-import "./css/HousePlan.css";
+import "./css/Plant.css";
 import {useState} from "react";
 
-function HousePlan(props) {
+function Plant(props) {
     return(
-        <section className="house-plan">
+        <section className="plant">
             <section className="feature-image">
                 <img src={props.main_image} alt={props.name} />
             </section>
@@ -12,11 +12,10 @@ function HousePlan(props) {
                 <p>Description: {props.description}</p>
                 <p>Price: ${props.price}</p>
                 <p>Rating: {props.rating}/5</p>
-                
             </section>
             
         </section>
     );
 };
 
-export default HousePlan;
+export default Plant;

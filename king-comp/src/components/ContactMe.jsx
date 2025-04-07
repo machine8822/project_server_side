@@ -1,3 +1,5 @@
+import './css/ContactMe.css';
+import React from "react";
 function Contact() {
     const [result, setResult] = React.useState("");
   
@@ -6,7 +8,7 @@ function Contact() {
       setResult("Sending....");
       const formData = new FormData(event.target);
   
-      formData.append("access_key", "YOUR_ACCESS_KEY_HERE");
+      formData.append("access_key", "3628413e-725e-4249-9193-75c1465dda18");
   
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
@@ -25,13 +27,17 @@ function Contact() {
     };
   
     return (
-      <div>
+      <div className="contact-section">
         <form onSubmit={onSubmit}>
-          <input type="text" name="name" required/>
-          <input type="email" name="email" required/>
-          <textarea name="message" required></textarea>
+          <h1>Contact Form</h1>
+          <p>Name:</p>
+          <input className="name-input" type="text" name="name" required/>
+          <p>Email:</p>
+          <input className="email-input" type="email" name="email" required/>
+          <p>Message:</p>
+          <textarea className="mess-input" name="message" required></textarea>
   
-          <button type="submit">Submit Form</button>
+          <button className="sub" type="submit">Submit Form</button>
   
         </form>
         <span>{result}</span>

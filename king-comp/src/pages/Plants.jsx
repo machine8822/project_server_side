@@ -1,11 +1,15 @@
 import './css/Plants.css';
 import Item from '../components/Item';
+import PlantPlan from '../components/Plant-Plan';
 
 function Plants() {
     return(
-        <>
+        
         <div className="columns">
           <h1>Plants</h1>
+          
+          <PlantPlan />
+          {/*
           <Item
           name="Mulch"
           description="Useful for keep the soil a good temperature and to prevent weeds from growing."
@@ -30,8 +34,9 @@ function Plants() {
           price="6.99"
           rating="3.3"
           image="./images/flower.jpg"/>
+          */}
       </div>
-        </>
+        
     );
 }
 
