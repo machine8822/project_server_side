@@ -1,7 +1,6 @@
 import './css/Home.css';
 import image from "../images/logoFinal.png";
-import Slideshow from '../components/Slideshow';
-import Contact from '../components/ContactMe';
+//import Slideshow from '../components/Slideshow';
 
 function App() {
   return (

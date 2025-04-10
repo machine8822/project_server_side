@@ -1,10 +1,10 @@
-.columns h1{
+.plant-sect h1{
     text-align: center;
     background-color: greenyellow;
     border-radius: 5px;
     padding: 5px;
 }
-.columns {
+.plant-sect {
     background-image: url("/public/images/lawn.png");
     background-size: cover;
     height: 100vh;

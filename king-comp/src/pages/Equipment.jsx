@@ -1,10 +1,9 @@
 import './css/Equipment.css';
-import Item from '../components/Item';
 import HousePlans from '../components/HousePlans';
 
 function Equipment() {
     return(
-      <div className="columns">
+      <div className="equipment-sect">
           <h1>Equipment</h1>
           <HousePlans />
           

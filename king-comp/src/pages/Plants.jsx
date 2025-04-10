@@ -1,11 +1,11 @@
 import './css/Plants.css';
-import Item from '../components/Item';
+//import Item from '../components/Item';
 import PlantPlan from '../components/Plant-Plan';
 
 function Plants() {
     return(
         
-        <div className="columns">
+        <div className="plant-sect">
           <h1>Plants</h1>
           
           <PlantPlan />

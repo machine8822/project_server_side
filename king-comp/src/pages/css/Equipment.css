@@ -1,11 +1,9 @@
-.columns h1{
+.equipment-sect h1{
     text-align: center;
     background-color: greenyellow;
-    border-radius: 5px;
-    
+    border-radius: 10px;
 }
-.columns {
-    background-image: url("/public/images/lawn.png");
+.equipment-sect {
     background-size: repeat;
     background-repeat: repeat;
     height: 100vh;

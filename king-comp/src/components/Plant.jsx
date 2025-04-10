@@ -1,5 +1,5 @@
 import "./css/Plant.css";
-import {useState} from "react";
+//import {useState} from "react";
 
 function Plant(props) {
     return(

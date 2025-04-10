@@ -1,6 +1,7 @@
 import {useState, useEffect} from "react";
 import axios from "axios";
 import HousePlan from "./HousePlan";
+import "./css/HousePlans.css";
 
 const HousePlans = () => {
     const [houses, setHouses] = useState([]);
@@ -18,7 +19,8 @@ const HousePlans = () => {
     return (
         <div id="house-plans" className="columns">
             {houses.map((house)=>(
-                <HousePlan 
+                <HousePlan
+                key={house.name}
                 _id={house._id}
                 name={house.name}
                 description={house.description}
