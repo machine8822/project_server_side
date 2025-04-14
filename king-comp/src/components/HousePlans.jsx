@@ -2,9 +2,11 @@ import {useState, useEffect} from "react";
 import axios from "axios";
 import HousePlan from "./HousePlan";
 import "./css/HousePlans.css";
+import AddHousePlan from "./AddHousePlan";
 
 const HousePlans = () => {
     const [houses, setHouses] = useState([]);
+    const [showAddDialog, setShowAddDialog] = useState(false);
 
     //after page loaded to async json retrieval
     useEffect(()=>{
@@ -16,20 +18,42 @@ const HousePlans = () => {
 
     },[]);
 
+    const openAddDialog = () => {
+        setShowAddDialog(true);
+    }
+
+    const closeAddDialog = () => {
+        console.log("I'm in the close method")
+        setShowAddDialog(false);
+    }
+
+    const updateHousePlans = (housePlan) => {
+        setHouses((houses)=>[...houses, housePlan]);
+    };
+
     return (
-        <div id="house-plans" className="columns">
-            {houses.map((house)=>(
-                <HousePlan
-                key={house.name}
-                _id={house._id}
-                name={house.name}
-                description={house.description}
-                price={house.price}
-                rating={house.rating}
-                main_image={house.img1}/>
-            ))}
-            
-        </div>
+        <>
+            <button id="add-house" onClick={openAddDialog}>+</button>
+
+            {showAddDialog?(<AddHousePlan 
+                                closeAddDialog={closeAddDialog} 
+                                updateHousePlans={updateHousePlans}
+                                /> ): ("")}
+
+            <div id="house-plans" className="columns">
+                {houses.map((house)=>(
+                    <HousePlan
+                    key={house.name}
+                    _id={house._id}
+                    name={house.name}
+                    description={house.description}
+                    price={house.price}
+                    rating={house.rating}
+                    main_image={house.img1}/>
+                ))}
+                
+            </div>
+        </>
     );
 };
 
