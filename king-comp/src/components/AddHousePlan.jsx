@@ -51,7 +51,7 @@ const AddHousePlan = (props) => {
 
                         <p>
                             <label htmlFor="price">Price:</label>
-                            <input type="number" id="price" name="price" min="0" required></input>
+                            <input type="number" id="price" name="price" min="0" step="0.01" required></input>
                         </p>
 
                         <p>
