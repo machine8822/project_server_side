@@ -1,11 +1,13 @@
 import "./css/HousePlan.css";
-//import {useState} from "react";
+import React, {useState} from "react";
+
 
 function HousePlan(props) {
     return(
         <section className="house-plan">
             <section className="feature-image">
-                <img src={props.main_image} alt={props.name} />
+                <img src={"https://landscaping-backend.onrender.com/images/" + props.main_image} alt={props.name}
+                 />
             </section>
             <section className="info">
                 <h2>{props.name}</h2>

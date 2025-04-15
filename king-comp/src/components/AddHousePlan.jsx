@@ -70,8 +70,8 @@ const AddHousePlan = (props) => {
                                 </p>
                             </div>
                             <p id="img-upload">
-                                <label htmlFor="main_image">Upload Image:</label>
-                                <input type="file" id="main_image" name="main_image" accept="image/*" onChange={uploadImage} />
+                                <label htmlFor="img">Upload Image:</label>
+                                <input type="file" id="img" name="img" accept="image/*" onChange={uploadImage} />
                             </p>
                         </section>
                         <img src="./images/logoFinal.png"/>

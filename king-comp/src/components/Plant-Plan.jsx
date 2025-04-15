@@ -26,7 +26,7 @@ const HousePlans = () => {
                 description={house.description}
                 price={house.price}
                 rating={house.rating}
-                main_image={house.img1}/>
+                main_image={house.main_image}/>
             ))}
             
         </div>

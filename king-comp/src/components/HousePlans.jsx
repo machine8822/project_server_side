@@ -23,7 +23,7 @@ const HousePlans = () => {
     }
 
     const closeAddDialog = () => {
-        console.log("I'm in the close method")
+        console.log("Closing dialog box");
         setShowAddDialog(false);
     }
 
@@ -49,7 +49,7 @@ const HousePlans = () => {
                     description={house.description}
                     price={house.price}
                     rating={house.rating}
-                    main_image={house.img1}/>
+                    main_image={house.main_image}/>
                 ))}
                 
             </div>
