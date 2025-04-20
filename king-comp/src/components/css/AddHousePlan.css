@@ -4,23 +4,22 @@
   position: relative;
 }
 
-#add-dialog,
-#edit-dialog,
-#delete-dialog {
+#add-dialog, #edit-dialog, #delete-dialog {
   display: block;
 }
 #h3 {
     font-size: 30px;
 }
-#add-property-form img {
+#add-property-form img, #edit-property-form img{
     height: auto;
     width: 200px;
 }
-#add-property-form {
+#add-property-form, #edit-property-form {
     background-color: green;
 }
 #delete-content {
   margin-bottom: 10px;
+  background-color: green;
 }
 
 #img-prev {

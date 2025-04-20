@@ -10,7 +10,7 @@ const AddHousePlan = (props) => {
     };
 
     const addToServer = async(event) => {
-        event.preventDefault(); //stops us from going to another page or refreshing
+        event.preventDefault(); //stops us from going to another page or refreshing https://landscaping-backend.onrender.com
         setResult("Sending...");
 
         const formData = new FormData(event.target);
@@ -37,7 +37,7 @@ const AddHousePlan = (props) => {
                 <div className="w3-container">
                     <span id="dialog-close" className="w3-button w3-display-topright" onClick={props.closeAddDialog}>&times;</span>
                     <form id="add-property-form" onSubmit={addToServer}>
-                        <h3>Create New Property</h3>
+                        <h3>Create New Item</h3>
 
                         <p>
                             <label htmlFor="name">Name:</label>

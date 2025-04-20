@@ -1,9 +1,10 @@
 import {useState, useEffect} from "react";
 import axios from "axios";
-import HousePlan from "./HousePlan";
+//import HousePlan from "./HousePlan";
+import Plant from "./Plant";
 import "./css/HousePlans.css";
 
-const HousePlans = () => {
+const PlantPlan = () => {
     const [plants, setHouses] = useState([]);
 
     //after page loaded to async json retrieval
@@ -19,7 +20,7 @@ const HousePlans = () => {
     return (
         <div id="house-plans" className="columns">
             {plants.map((house)=>(
-                <HousePlan
+                <Plant
                 key={house.name}
                 _id={house._id}
                 name={house.name}
@@ -33,4 +34,4 @@ const HousePlans = () => {
     );
 };
 
-export default HousePlans;
+export default PlantPlan;
