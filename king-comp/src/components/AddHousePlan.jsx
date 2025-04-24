@@ -10,7 +10,7 @@ const AddHousePlan = (props) => {
     };
 
     const addToServer = async(event) => {
-        event.preventDefault(); //stops us from going to another page or refreshing https://landscaping-backend.onrender.com
+        event.preventDefault(); //stops us from going to another page or refreshing 
         setResult("Sending...");
 
         const formData = new FormData(event.target);

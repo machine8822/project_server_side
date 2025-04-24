@@ -10,7 +10,7 @@ const HousePlans = () => {
 
     //after page loaded to async json retrieval
     useEffect(()=>{
-        //automatically execute the async function
+        //automatically execute the async function 
         (async () => {
             const response = await axios.get("https://landscaping-backend.onrender.com/api/houses");
             setHouses(response.data);

@@ -2,7 +2,7 @@ import "./css/AddHousePlan.css";
 import React, { useState } from "react";
 
 const DeleteHousePlan = (props) => {
-  const [result, setResult] = useState("");
+  const [result, setResult] = useState("");//
 
   const deleteHousePlan = async() => {
     const response = await fetch(`https://landscaping-backend.onrender.com/api/houses/${props._id}`,{

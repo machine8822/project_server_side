@@ -13,7 +13,7 @@ const EditHousePlan = (props) => {
     event.preventDefault();
     setResult("Sending...");
 
-    const formData = new FormData(event.target);
+    const formData = new FormData(event.target);//
     console.log(...formData);
 
     const response = await fetch(`https://landscaping-backend.onrender.com/api/houses/${props._id}`,{
